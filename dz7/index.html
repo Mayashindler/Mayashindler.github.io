@@ -1,4 +1,5 @@
-<!doctype html>
+
+          <!doctype html>
 <html lang="ru">
   <head>
     <!-- Required meta tags -->
@@ -8,11 +9,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>главная</title>
+    <style>
+      body {
+       background:url(фон.jpg); /* Цвет фона и путь к файлу */
+      ;
+      }
+     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="../img/лого.png" width="150" height="70" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <img src="лого.png" width="150" height="70" alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,10 +37,14 @@
                 Товары
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">выпечка</a>
+                <a class="dropdown-item" href="#">молочные продукты</a>
+                <a class="dropdown-item" href="#">мясная продукция</a>
+                <a class="dropdown-item" href="#">фрукты и овощи</a>
+                <a class="dropdown-item" href="#">масла растительные</a>
+                <a class="dropdown-item" href="#">продукты для веганов</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+               
               </div>
             </li>
             <li class="nav-item">
@@ -41,8 +52,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
           </form>
         </div>
       </nav>
@@ -72,5 +83,69 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+    <!-- 1-z карточка -->
+    <div class="card col-md-3 col-sm-4 m-1.bg-success ">
+        <img src="../img/хлеб продукты.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Выпечка</h5>
+          <p class="card-text"> у нас своя домашняя пекарня,используем только натуральные продукты и свежесмолотую муку</p>
+          <a href="#" class="btn btn-success .bg-success">купить</a>
+        </div>
+      </div>
+    <!-- 2-z карточка -->
+    <div class="card col-md-3 col-sm-4 m-1">
+          <img src="../img/мол продукты.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Молочные продукты</h5>
+            <p class="card-text">молоко и производство из него широкого ассортимента натуральных и  безопасных молочных продуктов 
+            </p>
+            <a href="#" class="btn btn-success">купить</a>
+          </div>
+        </div>
+          <!-- 3-z карточка -->
+    
+        <div class="card col-md-3 col-sm-4 m-1">
+            <img src="../img/мяс изд.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Мясная продукция</h5>
+              <p class="card-text">изделия созданные по уникальным собственным рецептурам, для тех, кому важно заботиться о себе и близких</p>
+              <a href="#" class="btn btn-success">купить</a>
+            </div>
+          </div>
+           <!-- 4-z карточка -->
+    <div class="card col-md-3 col-sm-4 m-1">
+      <img src="../img/фрукты.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Фрукты и овощи</h5>
+        <p class="card-text">только свежие плоды,не обработанные химикатами с нашей фермы</p>
+        <a href="#" class="btn btn-success">купить</a>
+      </div>
+    </div>
+  <!-- 5-z карточка -->
+  <div class="card col-md-3 col-sm-4 m-1">
+        <img src="../img/масла.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Масла растительные </h5>
+          <p class="card-text">органические масла без гмо и добавок,собственного производства</p>
+          <a href="#" class="btn btn-success">купить</a>
+        </div>
+      </div>
+        <!-- 6-z карточка -->
+  
+      <div class="card col-md-3 col-sm-4 m-1">
+          <img src="../img/веганск изд.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Продукты для веганов</h5>
+            <p class="card-text">без использования продуктов животного происхождения,без гмо и глутамата натрия </p>
+            <a href="#" class="btn btn-success">купить</a>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
   </body>
 </html>
