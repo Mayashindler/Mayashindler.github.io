@@ -1,5 +1,5 @@
 
-          <!doctype html>
+         <!doctype html>
 <html lang="ru">
   <head>
     <!-- Required meta tags -->
@@ -12,14 +12,17 @@
     <title>главная</title>
     <style>
       body {
-       background:url(../img/фон.jpg); /* Цвет фона и путь к файлу */
+       background:url(трава.jpg); /* Цвет фона и путь к файлу */ }
       ;
-      }
+      div {margin-top:20%; /* Отступ сверху */ }
+        p {
+    margin-top: 2 em; /* Отступ сверху */ 
+    margin-left: 2 em;}
      </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <img src="../img/лого.png" width="150" height="70" alt="">
+        <img src="../лого.png" width="150" height="70" alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,37 +60,59 @@
           </form>
         </div>
       </nav>
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/фруктыы1.jpg.png" class="d-block w-100 h-200" alt="...">
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://picsum.photos/id/674/1200/380" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Всегда свежие продукты</h5>
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/id/429/1200/380" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Только натуральные ингредиенты</h5>
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/id/835/1200/380" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>С заботой о Вас и Ваших близких</h5>
+               
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="../img/хлеб.jpg.png" class="d-block w-100 h-200" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/молоко1.png" class="d-block w-100 h-200" alt="...">
-          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <p></p>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
+    <div class="container-fluid margin-left: 2 em; ">
+      <div padding-top:50px; class="row justify-content-center">
     <!-- 1-z карточка -->
-    <div class="card col-md-3 col-sm-4 m-1.bg-success ">
-        <img src="../img/хлеб продукты.jpg" class="card-img-top" alt="...">
+    
+    <div   class="card col-md-3 col-sm-4 m-1  ">
+        <img src="../хлеб продукты.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Выпечка</h5>
           <p class="card-text"> у нас своя домашняя пекарня,используем только натуральные продукты и свежесмолотую муку</p>
@@ -96,7 +121,7 @@
       </div>
     <!-- 2-z карточка -->
     <div class="card col-md-3 col-sm-4 m-1">
-          <img src="../img/мол продукты.jpg" class="card-img-top" alt="...">
+          <img src="../мол продукты.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Молочные продукты</h5>
             <p class="card-text">молоко и производство из него широкого ассортимента натуральных и  безопасных молочных продуктов 
@@ -107,7 +132,7 @@
           <!-- 3-z карточка -->
     
         <div class="card col-md-3 col-sm-4 m-1">
-            <img src="../img/мяс изд.jpg" class="card-img-top" alt="...">
+            <img src="../мяс изд.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Мясная продукция</h5>
               <p class="card-text">изделия созданные по уникальным собственным рецептурам, для тех, кому важно заботиться о себе и близких</p>
@@ -116,7 +141,7 @@
           </div>
            <!-- 4-z карточка -->
     <div class="card col-md-3 col-sm-4 m-1">
-      <img src="../img/фрукты.jpg" class="card-img-top" alt="...">
+      <img src="../фрукты.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Фрукты и овощи</h5>
         <p class="card-text">только свежие плоды,не обработанные химикатами с нашей фермы</p>
@@ -125,7 +150,7 @@
     </div>
   <!-- 5-z карточка -->
   <div class="card col-md-3 col-sm-4 m-1">
-        <img src="../img/масла.jpg" class="card-img-top" alt="...">
+        <img src="../масла.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Масла растительные </h5>
           <p class="card-text">органические масла без гмо и добавок,собственного производства</p>
@@ -135,7 +160,7 @@
         <!-- 6-z карточка -->
   
       <div class="card col-md-3 col-sm-4 m-1">
-          <img src="../img/веганск изд.jpg" class="card-img-top" alt="...">
+          <img src="../веганск изд.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Продукты для веганов</h5>
             <p class="card-text">без использования продуктов животного происхождения,без гмо и глутамата натрия </p>
